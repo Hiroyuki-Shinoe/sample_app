@@ -49,6 +49,8 @@ group :test do
   gem 'minitest-reporters', '1.1.5'
   # MiniBacktrace allows you to take advantage of the Rails.backtrace_cleaner when using MiniTest.
   gem 'mini_backtrace', '0.1.3'
+  # Guard is a command line tool to easily handle events on file system modifications.
+  gem 'guard', '2.13'
   # Guard::Minitest automatically run your tests with Minitest framework (much like autotest)
   gem 'guard-minitest', '2.4.4'
 end
