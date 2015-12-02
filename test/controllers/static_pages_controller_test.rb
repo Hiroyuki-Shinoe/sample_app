@@ -7,7 +7,7 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
     # HTMLファイルに titleタグがあり、そのタグに囲まれているのが、
     # "Home | Ruby on Rails Tutorial Sample App"であるかを検証。
-    assert_select "title", "Home | Ruby on Rails Tutorial Sample App"
+    assert_select "title", "Ruby on Rails Tutorial Sample App"
   end
 
   test "should get help" do

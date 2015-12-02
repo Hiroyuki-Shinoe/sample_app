@@ -36,6 +36,10 @@ group :development, :test do
   gem 'spring', '1.4.1'
   gem 'better_errors', '2.1.1'
   gem 'binding_of_caller', '0.7.2'
+  # Handful of common Irb features, made easy.
+  gem 'wirble', '0.1.3'
+  # Great Ruby dubugging companion: pretty print Ruby objects to visualize their structure.
+  gem 'awesome_print', '1.6.1'
 end
 
 # Use postgresql as the database for production
