@@ -16,5 +16,11 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", help_path
     assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contact_path
+    # users#new ページに対するテストの指定
+    get signup_path
+    # users#newページのページタイトルが指定のものであるかのテスト
+  # assert_select "title", "Sign up | Ruby on Rails Tutorial Sample App"
+    # ApplicationHelperのfull_title(page_title="")を使用しての書き換え
+    assert_select "title", full_title("Sign up")
   end
 end
